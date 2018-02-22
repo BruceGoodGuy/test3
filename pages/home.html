@@ -1,0 +1,9 @@
+<div class="">
+	<div ng-repeat="item in range track by $index" class="form-group col-md-8">
+			<lable for="num">Num {{$index+1}}: </lable>
+			<input class="form-control" type="text" ng-model="range[$index]" required></input>
+	</div>
+	<div class="form-controll">
+		<button type="button" class="btn btn-danger" ng-click="process()">Process</button>
+	</div>
+</div>
